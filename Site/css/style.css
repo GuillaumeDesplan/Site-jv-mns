@@ -1,0 +1,182 @@
+html,
+header,
+nav,
+body,
+section {
+  background-color: rgb(24, 31, 61);
+  color: white;
+  font-family: "Mina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#button,
+footer {
+  font-family: "Mina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#orange {
+  color: rgb(255, 95, 45);
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background-color: rgb(255, 95, 45);
+  padding: 10px 20px;
+  list-style-type: none;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.show-menu {
+  display: block;
+}
+.bg-image {
+  background-image: url("/images/CTA-1.png");
+  padding: 18%;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+}
+.bg-image p {
+  backdrop-filter: blur(10px);
+}
+.mina-regular {
+  font-family: "Mina", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+hr {
+  height: 10px;
+  border-width: 10px;
+  color: rgb(254, 95, 45);
+  background-color: rgb(254, 95, 45);
+}
+#bgo {
+  color: #fff;
+  background-color: rgb(254, 95, 45);
+}
+#card {
+  color: #fff;
+}
+.bg-image1 {
+  background-image: url("/images/Index/Batman-Arkham-Knight-Chapeau-1200x800.jpg");
+  padding: 18%;
+  background-size: cover;
+  color: rgb(24, 31, 61);
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+}
+.bg-image1 p {
+  backdrop-filter: blur(10px);
+}
+
+#bg_card {
+  background-color: rgb(254, 95, 45);
+}
+.bg-image2 {
+  background-image: url("/images/carl-raw-8Gdayy2Lhi0-unsplash.jpg");
+  padding: 18%;
+  background-size: cover;
+  color: rgb(24, 31, 61);
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+}
+.bg-image2 p {
+  backdrop-filter: blur(10px);
+}
+.bg-image3 {
+  background-image: url("/images/ps4-notre-guide-d-achat-des-meilleurs-jeux-d-action-aventure-b37116f1__w854.jpg");
+  padding: 18%;
+  background-size: cover;
+  color: rgb(24, 31, 61);
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+}
+.bg-image3 p {
+  backdrop-filter: blur(10px);
+}
+
+.fixe-r {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+}
+.border-bottom {
+  color: rgb(24, 31, 61);
+}
+.bg-image4 {
+  background-image: url("/images/GameType/Combat/BackgroundCombat.jpg");
+  padding: 18%;
+  background-size: cover;
+  color: rgb(24, 31, 61);
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+}
+.bg-image4 p {
+  backdrop-filter: blur(10px);
+}
+.bg-image5 {
+  background-image: url("/images/GameType/FPS/BackgroundFPS.jpg");
+  padding: 18%;
+  background-size: cover;
+  color: rgb(24, 31, 61);
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+}
+.bg-image5 p {
+  backdrop-filter: blur(10px);
+}
+.bg-image6 {
+  background-image: url("/images/GameType/JeuxSolo/BackgroundJeuxSolo.jpg");
+  padding: 18%;
+  background-size: cover;
+  color: rgb(24, 31, 61);
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+}
+.bg-image6 p {
+  backdrop-filter: blur(10px);
+}
+.sr-only,
+.skiplink a:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.skip {
+  list-style-type: none;
+  margin: none;
+  padding: none;
+  border: none;
+  color: rgb(254, 95, 45);
+}

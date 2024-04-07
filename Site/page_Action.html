@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Action</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Mina&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="skiplink">
+      <a href="#jeux" class="skip">Nos jeux</a>
+    </nav>
+    <section>
+      <header class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center">
+            <a href="index.html">
+              <img
+                src="/images/Index/Logo_GameInvaders.png"
+                alt="logo"
+                width="15%"
+                height="auto"
+              />
+            </a>
+          </div>
+          <div
+            class="col-lg-6 d-flex align-items-center justify-content-between"
+          >
+            <h1 class="m-0" id="orange">Game Invaders</h1>
+            <div class="d-flex align-items-center">
+              <p class="mb-0 me-2">Utilisateur</p>
+              <a href="page_conexion.html" title="Page de Conexion"
+                ><box-icon name="user"></box-icon
+              ></a>
+
+              <box-icon
+                name="search-alt-2"
+                id="search-icon"
+                onclick="toggleMenu()"
+              ></box-icon>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="#"><box-icon name="home-alt-2"></box-icon>Accueil</a>
+            </li>
+            <li>
+              <a href="#"><box-icon name="file-find"></box-icon>À propos</a>
+            </li>
+            <li>
+              <a href="#"><box-icon name="cog"></box-icon>Services</a>
+            </li>
+            <li>
+              <a href="#"><box-icon name="message-alt"></box-icon>Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="fixe-r p-3">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#cart"
+          >
+            <box-icon name="basket"></box-icon> (<span
+              class="total-count"
+            ></span
+            >)
+          </button>
+          <button class="clear-cart btn btn-danger">
+            <box-icon name="basket"></box-icon>
+          </button>
+        </div>
+      </header>
+
+      <hr />
+      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+      <script src="/js/script.js"></script>
+      <div class="bg-image1">
+        <p class="display-1" id="tête">Action</p>
+      </div>
+      <section class="container" id="card">
+        <h2 id="jeux">Nos jeux d'actions:</h2>
+        <div class="row">
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/Action/LibrairieAction/avatar-frontiers-of-pandora-pc-jeu-ubisoft-connect-europe-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Avatar Frontiers of Pandora</h4>
+                <p class="card-text">Prix: 79.99€</p>
+                <div class="btn-group" role="group" aria-label="Actions">
+                  <a href="#" data-name="Avatar" data-price="79.99" class="add-to-cart btn btn-mod" style="margin-right: 10px; border-radius: 5px;">Ajouter au Panier</a>
+                  <a href="page_produit.html" class="btn btn-mod" style="border-radius: 5px;">Voir le produit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/Action/LibrairieAction/assassin-s-creed-mirage-pc-jeu-ubisoft-connect-europe-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Assassin's Creed Mirage</h4>
+                <p class="card-text">Prix: 45.69€</p>
+                <a
+                  href="#"
+                  data-name="Assassin's Creed Mirage"
+                  data-price="45.69"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/Action/LibrairieAction/astral-ascent-pc-jeu-steam-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Astral Ascent</h4>
+                <p class="card-text">Prix: 24.99€</p>
+                <a
+                  href="#"
+                  data-name="Astral Ascent"
+                  data-price="24.99"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/Action/LibrairieAction/atlas-fallen-pc-jeu-steam-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Atlas Fallen</h4>
+                <p class="card-text">Prix: 39.99€</p>
+                <a
+                  href="#"
+                  data-name="Atlas Fallen"
+                  data-price="39.99"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/Action/LibrairieAction/dragon-s-dogma-2-pc-jeu-steam-europe-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Dragon's Doma 2</h4>
+                <p class="card-text">Prix: 69.99€</p>
+                <a
+                  href="#"
+                  data-name="Dragon's Doma 2"
+                  data-price="69.99"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/Action/LibrairieAction/endless-dungeon-pc-jeu-steam-europe-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Endless Dungeon</h4>
+                <p class="card-text">Prix: 29.99€</p>
+                <a
+                  href="#"
+                  data-name="Endless Dungeon"
+                  data-price="29.99"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/Action/LibrairieAction/helldivers-2-pc-jeu-steam-europe-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Helldivers 2</h4>
+                <p class="card-text">Prix: 39.99€</p>
+                <a
+                  href="#"
+                  data-name="Helldivers 2"
+                  data-price="39.99"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/Action/LibrairieAction/lies-of-p-pc-jeu-steam-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Lies of P</h4>
+                <p class="card-text">Prix: 59.99€</p>
+                <a
+                  href="#"
+                  data-name="Lies of P"
+                  data-price="59.99"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/Action/LibrairieAction/lords-of-the-fallen-deluxe-edition-deluxe-edition-pc-jeu-steam-europe-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Lords of the Fallen</h4>
+                <p class="card-text">Prix: 47.99€</p>
+                <a
+                  href="#"
+                  data-name="Lords of the Fallen"
+                  data-price="47.99"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Panier</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table"></table>
+            <div>Prix total €<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Fermer
+            </button>
+            <button type="button" class="btn btn-mod">
+              Acheter Maintenant
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-mod">
+      <div class="container">
+        <footer class="py-3">
+          <ul
+            class="nav justify-content-center border-bottom border-primary pb-3 mb-3"
+          >
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">About</a>
+            </li>
+          </ul>
+          <p class="text-center text-muted">© 2024 Guillaume Desplan, MNS</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FPS</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Mina&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="skiplink">
+      <a href="#jeux" class="skip">Nos jeux</a>
+    </nav>
+    <section>
+      <header class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center">
+            <a href="index.html">
+              <img
+                src="/images/Index/Logo_GameInvaders.png"
+                alt="logo"
+                width="15%"
+                height="auto"
+              />
+            </a>
+          </div>
+          <div
+            class="col-lg-6 d-flex align-items-center justify-content-between"
+          >
+            <h1 class="m-0" id="orange">Game Invaders</h1>
+            <div class="d-flex align-items-center">
+              <p class="mb-0 me-2">Utilisateur</p>
+              <a href="page_conexion.html" title="Page de Conexion"
+                ><box-icon name="user"></box-icon
+              ></a>
+
+              <box-icon
+                name="search-alt-2"
+                id="search-icon"
+                onclick="toggleMenu()"
+              ></box-icon>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <ul class="menu">
+            <li>
+              <a href="#"><box-icon name="home-alt-2"></box-icon>Accueil</a>
+            </li>
+            <li>
+              <a href="#"><box-icon name="file-find"></box-icon>À propos</a>
+            </li>
+            <li>
+              <a href="#"><box-icon name="cog"></box-icon>Services</a>
+            </li>
+            <li>
+              <a href="#"><box-icon name="message-alt"></box-icon>Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="fixe-r p-3">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#cart"
+          >
+            <box-icon name="basket"></box-icon> (<span
+              class="total-count"
+            ></span
+            >)
+          </button>
+          <button class="clear-cart btn btn-danger">
+            <box-icon name="basket"></box-icon>
+          </button>
+        </div>
+      </header>
+
+      <hr />
+      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+      <script src="/js/script.js"></script>
+      <div class="bg-image5">
+        <p class="display-1" id="tête">FPS</p>
+      </div>
+      <section class="container" id="card">
+        <h2 id="jeux">Nos FPS:</h2>
+        <div class="row">
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/FPS/LibrairieFPS/anthem-pc-jeu-origin-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Anthem</h4>
+                <p class="card-text">Prix: 89.99€</p>
+                <a
+                  href="#"
+                  data-name="Anthem"
+                  data-price="89.99"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/FPS/LibrairieFPS/battlefield-3-armored-kill-pc-jeu-ea-app-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Battlefield 3 (dlc)</h4>
+                <p class="card-text">Prix: 14.99€</p>
+                <a
+                  href="#"
+                  data-name="Battlefield 3 (dlc)"
+                  data-price="14.99"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/FPS/LibrairieFPS/call-of-duty-black-ops-4-xbox-one-xbox-series-x-s-xbox-one-xbox-series-x-s-jeu-microsoft-store-europe-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Call Of Duty BO4</h4>
+                <p class="card-text">Prix: 59.99</p>
+                <a
+                  href="#"
+                  data-name="Call Of Duty BO4"
+                  data-price="59.99"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/FPS/LibrairieFPS/crysis-remastered-trilogy-switch-trilogy-switch-jeu-nintendo-eshop-europe-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Crysis Remastered Trilogy</h4>
+                <p class="card-text">Prix: 50.00€</p>
+                <a
+                  href="#"
+                  data-name="Crysis Remastered Trilogy"
+                  data-price="50.00"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/FPS/LibrairieFPS/escape-from-tarkov-pc-jeu-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Escape from Tarkov</h4>
+                <p class="card-text">Prix: 52.00€</p>
+                <a
+                  href="#"
+                  data-name="Escape from Tarkov"
+                  data-price="52.00"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/FPS/LibrairieFPS/far-cry-6-pc-jeu-ubisoft-connect-europe-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Far Cry 6</h4>
+                <p class="card-text">Prix: 60.00€</p>
+                <a
+                  href="#"
+                  data-name="Far Cry 6"
+                  data-price="60.00"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/FPS/LibrairieFPS/payday-2-the-crimewave-collection-xbox-one-xbox-series-x-s-xbox-one-xbox-series-x-s-jeu-microsoft-store-europe-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Payday 2</h4>
+                <p class="card-text">Prix: 9.99€</p>
+                <a
+                  href="#"
+                  data-name="Payday 2"
+                  data-price="9.99"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/FPS/LibrairieFPS/rainbow-six-extraction-pc-jeu-ubisoft-connect-europe-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Rainbow Six Extraction</h4>
+                <p class="card-text">Prix: 40.00€</p>
+                <a
+                  href="#"
+                  data-name="Rainbow Six Extraction"
+                  data-price="40.00"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 py-3">
+            <div class="card mb-4" style="width: 100%" id="bg_card">
+              <img
+                class="card-img-top"
+                src="/images/GameType/FPS/LibrairieFPS/sniper-ghost-warrior-trilogy-pc-jeu-steam-cover.jpg"
+                alt="Card image cap"
+              />
+              <div class="card-block text-center">
+                <h4 class="card-title">Sniper Ghost Warior Trilogy</h4>
+                <p class="card-text">Prix: 19.00€</p>
+                <a
+                  href="#"
+                  data-name="Sniper Ghost Warior Trilogy"
+                  data-price="19.00"
+                  class="add-to-cart btn btn-mod"
+                  >Ajouter au Panier</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <div
+      class="modal fade"
+      id="cart"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Panier</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="show-cart table"></table>
+            <div>Prix total €<span class="total-cart"></span></div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Fermer
+            </button>
+            <button type="button" class="btn btn-mod">
+              Acheter Maintenant
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-mod">
+      <div class="container">
+        <footer class="py-3">
+          <ul
+            class="nav justify-content-center border-bottom border-primary pb-3 mb-3"
+          >
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">Features</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-muted">About</a>
+            </li>
+          </ul>
+          <p class="text-center text-muted">© 2024 Guillaume Desplan, MNS</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
